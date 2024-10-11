@@ -1,0 +1,115 @@
+project:
+  type: website
+  output-dir: docs
+
+  preview:
+    port: 5555
+    browser: true
+    watch-inputs: true
+    navigate: true
+
+  render:
+    - "*.qmd"
+    - "*.md"
+    - "!etc/"
+
+  resources:
+    - "profiles/**"
+    - "etc/**"
+
+    # Things that need to be at the site root
+    - ".htaccess"
+    - "LiveSearchSiteAuth.xml"
+    - "keybase.txt"
+    - "y_key_31e0c4105fc75710.html"
+    - "pgp_ath.asc.txt"
+
+freeze: true
+
+bibliography: bib/Ma_bibliothèque.bib
+csl: bib/apa.csl
+
+# Metadata stuff
+pagetitle: "{{< meta title >}} | Robert Djogbenou"
+author-meta: "Robert Djogbenou"
+
+website:
+  title: "Robert Djogbenou"
+  description: "Robert Djogbenou is a demographer at Institut de Statistique du Queébec| Deep Learning, Data Science, Research."
+  favicon: "/profiles/favicon-512.png"
+  #site-url: "https://www.andrewheiss.com"
+  repo-url: "https://github.com/Djogbenou"
+
+ # google-analytics: "UA-527449-5"
+
+  twitter-card:
+    image: "/profiles/twitter-card-large.png"
+    card-style: summary_large_image
+    creator: "@RobertDJOGBENO1"
+    site: "@RobertDJOGBENO1"
+   
+  open-graph:
+    image: "/profiles/twitter-card-large.png"
+    locale: en_US
+  
+  navbar:
+    pinned: true
+
+    left:
+      - text: "About"
+        href: "index.qmd"
+      - text: "CV"
+        href: "cv/index.qmd"
+    #  - text: "Awards"
+    #    file: blog/index.qmd
+      - text: "Research"
+        file: research/index.qmd
+      - text: "Teaching"
+        href: "teaching/index.qmd"
+    #  - text: "Talks"
+    #    href: "talks/index.qmd"
+    #  - text: "Now"
+    #    href: now/index.qmd
+    #  - text: "Uses"
+    #    file: uses/index.qmd
+    
+    right:
+      - icon: envelope
+        aria-label: email
+        href: "mailto:yao.robert.djogbenou@umontreal.ca"
+      - icon: twitter
+        href: https://x.com/RobertDJOGBENO1
+     # - text: "{{< iconify ai google-scholar >}}"
+     #   href: https://scholar.google.com/citations?user=akV7mn4AAAAJ&hl=fr
+     # - text: "{{< iconify ai orcid>}}"
+     #   href: https://orcid.org/0000-0002-1740-9713
+      - icon: github
+        href: https://github.com/Djogbenou
+      - icon: linkedin
+        href: https://www.linkedin.com/in/yao-robert-djogbenou-ph-d-9b0b57219/
+      
+  
+  page-footer:
+    left: |
+      <span class="faux-block">{{< fa brands creative-commons >}} {{< var years >}} Robert Djogbenou</span>
+      
+    center: |
+      <span class="faux-block">{{< fa brands orcid >}} <strong>ORCID</strong> [{{< var orcid >}}](https://orcid.org/my-orcid?orcid=0000-0002-1740-9713{{< var orcid >}})</span>
+      
+    right: |
+      <span class="faux-block">Build with {{< fa brands r-project >}} and [Quarto](https://quarto.org/)</span>
+      <span class="faux-block">[View the source code at {{< fa brands github >}} GitHub](https://github.com/Djogbenou)</span>
+
+format:
+  html:
+    theme:
+      - html/ath.scss
+    grid:
+      body-width: 900px
+    toc: false
+    code-link: true
+    anchor-sections: true
+    fig-cap-location: margin
+    reference-location: margin
+    footnotes-hover: true
+    highlight-style: monokai
