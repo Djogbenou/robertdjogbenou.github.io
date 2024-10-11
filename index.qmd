@@ -2,8 +2,8 @@
 #title: "Hello there!"
 pagetitle: "Robert Djogbenou"
 description-meta: "Robert Djogbenou is a demographer and data scientist."
-main-photo: /profiles/Robert-Djogbenou.jpg
-main-photo-square: /profiles/Robert-Djogbenou.jpg
+main-photo: /Users/robertdjogbenou/Library/CloudStorage/OneDrive-UniversitedeMontreal/robertdjogbenou.github.io/profiles/Robert-Djogbenou.jpg
+main-photo-square: /Users/robertdjogbenou/Library/CloudStorage/OneDrive-UniversitedeMontreal/robertdjogbenou.github.io/profiles/Robert-Djogbenou.jpg
 title-block-banner: "#CF4446"
 format:
   html:
