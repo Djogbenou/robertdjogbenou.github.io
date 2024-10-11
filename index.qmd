@@ -2,9 +2,16 @@
 #title: "Hello there!"
 pagetitle: "Robert Djogbenou"
 description-meta: "Robert Djogbenou is a demographer and data scientist."
-main-photo: /Robert-Djogbenou.JPG
-main-photo-square: /Robert-Djogbenou.JPG
-page-layout: full
+main-photo: /Users/robertdjogbenou/Library/CloudStorage/OneDrive-UniversitedeMontreal/robertdjogbenou.github.io/docs/Robert-Djogbenou.JPG
+main-photo-square: /Users/robertdjogbenou/Library/CloudStorage/OneDrive-UniversitedeMontreal/robertdjogbenou.github.io/docs/Robert-Djogbenou.JPG
+listing:
+  contents: posts
+  fields: [image, date, title, description, author]
+  sort: "date desc"
+  type: default
+  categories: false
+  sort-ui: false
+  filter-ui: false
 title-block-banner: "#CF4446"
 format:
   html:
